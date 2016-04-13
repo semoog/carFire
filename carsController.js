@@ -16,4 +16,6 @@ app.controller('carsController', function ($scope) {
       $scope.cars.$save(car);
     };
 
+    // $scope.cars.$loaded
+
 });
