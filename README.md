@@ -15,7 +15,7 @@ Create the following routes in your app's `config` method:
 - "cars": `/cars`
 - "car": `/cars/:carId`
 
-Create templates for both of the views. 
+Create templates for both of the views.
 
 ### `/cars` view
 This view will show a list of cars. Use an `ng-repeat` and bind to properties on a car such as:
@@ -39,7 +39,7 @@ Also, create a `carsService` (make sure it's linked in the HTML) and add the fol
 - `getComments(carId)`: will return a Firebase ref pointing to a collection of comments made for a single car
 
 ## Step 4: Finish the routes
-Create resolves on your routes so they will invoke the service methods we just created. 
+Create resolves on your routes so they will invoke the service methods we just created.
 
 On the "cars" state, resolve for a variable `carsRef`, which will receive the result of the `carsService.getCars()` method.
 
